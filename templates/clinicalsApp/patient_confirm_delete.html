@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Do you want to delete patient: {{patient.lastName}} {{patient.firstName}}?</h2>
+    <form method="post">
+      <input type="submit" value="Yes">
+      <a href="/patient">No</a>
+      {% csrf_token %}
+    </form>
+</body>
+</html>
